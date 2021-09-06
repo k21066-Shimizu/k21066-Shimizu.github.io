@@ -1,0 +1,59 @@
+body{
+	position: relative;
+	width: 300px;
+	margin: 100px auto;
+}
+
+.origin{
+	position: absolute;
+
+	height: 62px;
+	width: 140px;
+
+	transform-origin: 50% 50%;
+
+	animation-name: rotateAni;
+	animation-fill-mode:backwards;
+	animation-duration:0.5s;
+	animation-iteration-count:infinite;
+	animation-timing-function:linear;
+	animation-delay: 4s;
+	animation-direction:normal;
+}
+
+.box{
+	position: absolute;
+
+	border: 2px solid #000000;
+	border-radius: 3px;
+
+	left: -44px;
+
+	height: 100%;
+	width: 100%;
+
+	animation-name: rotateAni;
+	animation-fill-mode:backwards;
+	animation-duration:0.5s;
+	animation-iteration-count:infinite;
+	animation-timing-function:linear;
+	animation-delay: 4s;
+	animation-direction:reverse;
+}
+
+@keyframes rotateAni{
+	0%{
+		transform: rotate(0deg);
+	}
+
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.text{
+	font-size: 16px;;
+	position: absolute;
+	top: 10px;
+	left: 18px;
+}
